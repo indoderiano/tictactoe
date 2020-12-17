@@ -1,0 +1,327 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title.center {
+    top: 45%;
+    text-align: center;
+}
+.sign-btn {
+    display:inline-block;
+    font-size: 20px;
+    padding:0.7em 1.4em;
+    margin:50px 0.3em 0.3em 0;
+    border-radius:0.15em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    text-transform:uppercase;
+    font-weight:400;
+    color:#FFFFFF;
+    background-color:#3369ff;
+    box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+    text-align:center;
+    position:relative;
+    border: 0;
+    cursor: pointer;
+}
+
+.sign-btn:hover {
+    background-color:orange;
+    transition: background-color .2s ease;
+}
+.title.center a:active {
+    top:0.1em;
+}
+
+.title {
+    font-family: 'Special Elite', cursive;
+    font-size: 45px;
+}
+
+
+.klip {
+    color: rgba(0,0,0,.7);
+    margin: 0 .3em;
+    display: inline-block;
+    transition: transform .3s ease;
+}
+
+
+
+
+
+
+
+
+/* start */
+
+#pickPlayer {
+    width:100vw;
+}
+
+#pickPlayer .player {
+    /* display: inline-block; */
+    width: 50%;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#pickPlayer .player .center{
+    top: 45%;
+}
+
+.dark {
+    color: white;
+    background: rgba(0,0,0,.7);
+}
+
+#pickPlayer input{
+    font-size: 24px;
+    border-radius: 10px;
+    /* border:0px; */
+
+    /* font-size: 16px; */
+    /* font-size: Max(16px, 1em); */
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border: 2px solid #8b8a8b;
+    border-radius: 4px;
+    transition: 180ms box-shadow ease-in-out;
+    width: 250px;
+    box-sizing: border-box;
+}
+
+#pickPlayer input:focus {
+    border-color: hsl(
+    245,
+    100%,
+    42%
+  );
+  box-shadow: 0 0 0 3px
+    hsla(
+      245,
+      100%,
+      calc(42% + 40%),
+      0.8
+    );
+  outline: 3px solid transparent;
+}
+
+#player1Img,#player2Img {
+    /* position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,0); */
+    transition: all .5s ease;
+}
+#player1Img.hide{
+    left: -80%;
+}
+#player2Img.hide{
+    left: 180%;
+}
+
+#player1Img img {
+    width: 300px;
+}
+#player2Img img {
+    width: 170px;
+}
+
+#player1Input.hide {
+    left: 150%;
+}
+#player2Input.hide {
+    left: -50%;
+}
+
+.register {
+    transition: all .5s ease;
+}
+
+
+.player-label {
+    font-size: 27px;
+    margin-bottom: 70px;
+}
+
+#pickPlayer.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .7s ease 1s;
+}
+
+#arena {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    transform: scale(1);
+    transition: opacity .7s ease 1s, background .7s ease;
+    transform-origin: 50% 50%;
+}
+#arena.hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .7s ease;
+    /* transform: scale(.3) */
+}
+
+.arena-left {
+    /* display: inline-block; */
+    height: 100vh;
+    width: 25%;
+    float: left;
+    overflow: hidden;
+}
+.arena-mid {
+    width: 50%;
+    float: left;
+    height: 100vh;
+    font-family: 'Shadows Into Light', cursive;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.v1 {
+    position: absolute;
+    top: 57%;
+    left: 33%;
+    transform: translate(-50%,-50%) scaleX(.4);
+    font-size: 570px;
+    transition: all .3s ease 1.8s;
+}
+.hide .v1{
+    top: -50%;
+}
+
+.v2 {
+    position: absolute;
+    top: 57%;
+    left: 66%;
+    transform: translate(-50%,-50%) scaleX(.4);
+    font-size: 570px;
+    transition: all .3s ease 2s;
+}
+.hide .v2{
+    top: 150%;
+}
+
+.h1 {
+    position: absolute;
+    top: 33%;
+    left: 42%;
+    transform: translate(-50%,-50%) scaleY(.4) rotate(90deg);
+    font-size: 570px;
+    transition: all .3s ease 2.2s;
+}
+.hide .h1{
+    left: -50%;
+}
+
+.h2 {
+    position: absolute;
+    top: 66%;
+    left: 42%;
+    transform: translate(-50%,-50%) scaleY(.4) rotate(90deg);
+    font-size: 570px;
+    transition: all .3s ease 2.4s;
+}
+.hide .h2{
+    left: 150%;
+}
+
+.box {
+    float: left;
+    width: 33%;
+    height: 33%;
+    /* font-size: 210px; */
+    position: relative;
+}
+
+.mark {
+    font-size: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.msg {
+    position: relative;
+    text-align: center;
+    transition: all .5s ease;
+}
+
+.msg img{
+    width: 100%;
+}
+.msg.left img{
+    width: 80%;
+}
+
+.msg.left {
+    left: -50%;
+}
+.msg.right {
+    left: 150%;
+}
+
+.msg.left.turn, .msg.right.turn {
+    left: 50%
+}
+
+
+#winner {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all .7s ease .7s;
+}
+
+#winner.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#superman, #joker{
+    display: none;
+}
+#superman.appear, #joker.appear {
+    display: block;
+}
+
+
+.appear .hero {
+    /* display: block; */
+    animation: appear 1s ease 0s forwards;
+}
+
+@keyframes appear {
+    0% {opacity: 0; transform: scale(.2);}
+    85% {opacity: 1; transform: scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+#superman img {
+    width: 250px;
+}
+#joker img {
+    width: 300px;
+}

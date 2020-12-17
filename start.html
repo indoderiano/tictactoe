@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="pickPlayer" class="">
+        <div class="player">
+            <div id="player1Input" class="register center">
+                <p>Input player 1's name</p>
+                <input id="player1Name" type="text"/>
+                <button id="getPlayer1Name" class="sign-btn" style="width:250px;">OK</button>
+            </div>
+            <div id="player1Img" class="center hide">
+                <p class="player-label" style="text-align: center;">test is ready</p>
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d69d44a5-e79f-435c-81ad-d8b719fd520d/dbi8nq5-e0ca86de-7a68-40d3-9dfd-29a53bb1f910.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvZDY5ZDQ0YTUtZTc5Zi00MzVjLTgxYWQtZDhiNzE5ZmQ1MjBkXC9kYmk4bnE1LWUwY2E4NmRlLTdhNjgtNDBkMy05ZGZkLTI5YTUzYmIxZjkxMC5wbmcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.BPVAMZo9jOJ9c9mmrBMBfSwCcPMB4xxompbhb55nE_U"/>
+            </div>
+        </div>
+        <div class="player dark">
+            <div id="player2Input" class="register center">
+                <p>Input player 2's name</p>
+                <input id="player2Name" type="text"/>
+                <button id="getPlayer2Name" class="sign-btn" style="width:250px;">OK</button>
+            </div>
+            <div id="player2Img" class="center hide">
+                <p class="player-label" style="text-align: center;">test is ready</p>
+                <img src="https://www.pngkey.com/png/full/5-58258_dc-comics-joker-png.png"/>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="arena" class="hide">
+
+        <div class="arena-left">
+            <div id="msgPlayer1" class="msg left center">
+                <p>It's Your Turn</p>
+                <div>
+                    <img src='https://lh3.googleusercontent.com/proxy/FGeSPDrwCWmLZbCf3LiaET-bLJqR3fYLSTlvfiWHO4XlRKTGqAAoMJQu7g9iZ2F-uBjAinvHhlrrEmyXiZ6Mym1Jrwpk_A3c-qNcCYfmGCmGv3GIPIInblbfDISdn1wN4sEMuoodB26vVcI8'/>
+                </div>
+            </div>
+        </div>
+        <div class="arena-mid">
+            <div style="width: 500px; height:500px; position: relative; overflow: hidden;border:0px solid red;" class="center">
+                <span class="v1">l</span>
+                <span class="v2">l</span>
+                <span class="h1">l</span>
+                <span class="h2">l</span>
+
+                <!--  -->
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="arena-left">
+            <div id="msgPlayer2" class="msg right center">
+                <p>It's Your Turn</p>
+                <div>
+                    <img src='https://lh3.googleusercontent.com/proxy/1hZxTNoeTLblBk89FJ0lXwsHGm1SQ-ZvNNoSyqNnEMkt5ac9_MPneDJCQt1C-Sb-QNOP9cQejuEzyq_JpYGTeglIpZGvRAVa8Y3W8Q3-ZIKiqcmwqL7QZWSq7PupfFTlqgAEc2WHOQ'/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id='winner' class="hide">
+        <div id="superman" class="center">
+            <p id="resultMsg">The Winner is</p>
+            <div class="hero">
+                <img src='https://lh3.googleusercontent.com/proxy/FGeSPDrwCWmLZbCf3LiaET-bLJqR3fYLSTlvfiWHO4XlRKTGqAAoMJQu7g9iZ2F-uBjAinvHhlrrEmyXiZ6Mym1Jrwpk_A3c-qNcCYfmGCmGv3GIPIInblbfDISdn1wN4sEMuoodB26vVcI8'/>
+            </div>
+        </div>
+        <div id="joker" class="center">
+            <p id="resultMsg">The Winner is</p>
+            <div class="hero">
+                <img src='https://lh3.googleusercontent.com/proxy/1hZxTNoeTLblBk89FJ0lXwsHGm1SQ-ZvNNoSyqNnEMkt5ac9_MPneDJCQt1C-Sb-QNOP9cQejuEzyq_JpYGTeglIpZGvRAVa8Y3W8Q3-ZIKiqcmwqL7QZWSq7PupfFTlqgAEc2WHOQ'/>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="./start.js"></script>
+</html>

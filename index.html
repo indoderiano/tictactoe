@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="center title">
+        <div>
+            <span class="klip">Tic</span>
+            <span class="klip">Tac</span>
+            <span class="klip">Toe</span>
+        </div>
+        
+        <a class="sign-btn" href='./start.html'>Start</a>
+    </div>
+    
+</body>
+<script>
+    var klip=document.getElementsByClassName('klip')
+    console.log(klip.length)
+    for(let i=0;i<klip.length;i++){
+        setInterval(()=>{
+            var r=Math.random()*255
+            var g=Math.random()*255
+            var b=Math.random()*255
+            klip[i].style.color=`rgb(${r},${g},${b})`
+            
+            var d=Math.random()*90-45
+            klip[i].style.transform=`rotate(${d}deg)`
+        },1000)
+
+    }
+</script>
+</html>
